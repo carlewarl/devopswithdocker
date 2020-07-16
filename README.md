@@ -12,7 +12,8 @@ Ex 1.7
 
 Dockerfile
 
-```FROM ubuntu:16.04
+```
+FROM ubuntu:16.04
 
 WORKDIR /mydir
 RUN apt-get update && apt-get install -y curl
@@ -20,4 +21,6 @@ RUN apt-get update && apt-get install -y curl
 
 COPY myscript.sh .
 RUN chmod +x myscript.sh
-CMD ["sh", "myscript.sh"]```
+CMD ["sh", "myscript.sh"]
+```
+
