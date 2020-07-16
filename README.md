@@ -8,9 +8,9 @@ Ex 1.1
 
 
 
-Ex 1.7
+**Ex 1.7**
 
-Dockerfile
+Dockerfile:
 
 ```
 FROM ubuntu:16.04
