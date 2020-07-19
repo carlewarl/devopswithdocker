@@ -47,3 +47,24 @@ Searching..
 <p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
 </body></html>
 ```
+
+
+
+**Ex 1.8**
+
+```
+docker run --mount source=testvol1,target=/usr/app devopsdockeruh/first_volume_exercise
+```
+
+cd to /var/lib/docker/volumes/testvol1/_data
+
+```
+[root@idc091ucp003vm _data]# cat logs.txt
+Sun, 19 Jul 2020 19:07:25 GMT
+Sun, 19 Jul 2020 19:07:28 GMT
+Sun, 19 Jul 2020 19:07:31 GMT
+Sun, 19 Jul 2020 19:07:34 GMT
+Secret message is:
+"Volume bind mount is easy"
+```
+
