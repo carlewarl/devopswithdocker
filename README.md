@@ -59,7 +59,7 @@ docker run --mount source=testvol1,target=/usr/app devopsdockeruh/first_volume_e
 cd to /var/lib/docker/volumes/testvol1/_data
 
 ```
-[root@idc091ucp003vm _data]# cat logs.txt
+[root@hostname _data]# cat logs.txt
 Sun, 19 Jul 2020 19:07:25 GMT
 Sun, 19 Jul 2020 19:07:28 GMT
 Sun, 19 Jul 2020 19:07:31 GMT
