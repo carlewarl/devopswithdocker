@@ -75,8 +75,8 @@ Secret message is:
 docker run -d -p 5555:80 devopsdockeruh/ports_exercise
 ```
 
-Browser to http://localhost:5555
+Browse to http://localhost:5555
 
 ```
-Ports configured correctly!
+Ports configured correctly!!
 ```
