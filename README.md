@@ -68,3 +68,15 @@ Secret message is:
 "Volume bind mount is easy"
 ```
 
+
+**Ex 1.9**
+
+```
+docker run -d -p 5555:80 devopsdockeruh/ports_exercise
+```
+
+Browser to http://localhost:5555
+
+```
+Ports configured correctly!
+```
