@@ -103,5 +103,46 @@ RUN npm install -g serve
 
 EXPOSE 5000
 
+CMD ["serve", "-s", "-l", "5000", "dist"]
+```
+
+Commands:
+
+```
+docker build -t ex110 .
+docker run -it -p 5000:5000 ex110
+```
+
+**Ex 1.11**
+
+dockerfile
+
+```
+FROM ubuntu:latest
+
+WORKDIR /usr/app
+RUN apt update && apt upgrade -y
+RUN apt install -y curl
+RUN apt install -y npm
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
+RUN apt install -y nodejs
+COPY backend-example-docker/ .
+RUN npm config set strict-ssl false
+RUN npm install
+
+RUN npm install -g serve
+
+EXPOSE 8000
+
 CMD ["server", "-s", "-l", "5000", "dist"]
 ```
+
+Commands:
+
+```
+docker build -t ex111 .
+docker run --mount source=ex111vol,target=/usr/app -p 8000:8000 ex111
+```
+
+**Ex 1.12**
+
