@@ -80,3 +80,28 @@ Browse to http://localhost:5555
 ```
 Ports configured correctly!!
 ```
+
+
+**Ex 1.10**
+
+dockerfile
+
+```
+FROM ubuntu:latest
+
+WORKDIR /usr/app
+RUN apt update && apt upgrade -y
+RUN apt install -y curl
+RUN apt install -y npm
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
+RUN apt install -y nodejs
+
+RUN npm config set strict-ssl false
+RUN npm install
+
+RUN npm install -g serve
+
+EXPOSE 5000
+
+CMD ["server", "-s", "-l", "5000", "dist"]
+```
