@@ -95,7 +95,7 @@ RUN apt install -y curl
 RUN apt install -y npm
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
 RUN apt install -y nodejs
-
+COPY frontend-example-docker/ .
 RUN npm config set strict-ssl false
 RUN npm install
 
