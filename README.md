@@ -4,9 +4,6 @@ Exercices from https://devopswithdocker.com/part1/
 
 Part 1
 
-Ex 1.1
-
-
 
 **Ex 1.7**
 
